@@ -1,0 +1,144 @@
+
+.rosado {color: #B63D70}
+.rosado {color: #602464}
+.violeta {color: #351D5B}
+.azul {color: #221C5A}
+.naranja-claro {color: #FF8C61}
+.verde {color: #4c5b0d} /* rgba(76,91,13,1)*/
+
+
+
+html, body {font-family: 'Raleway', sans-serif; font-size: 15px; color: #4c5b0d}
+
+a {color: rgba(76,91,13,1)}
+a:hover {color: rgba(76,91,13,0.8)}
+.btn-primary {background: rgba(76,91,13,1); border: 0px}
+.btn-primary:hover {background: rgba(76,91,13,0.8)}
+
+
+.foto {background: url(../img/bg-header.jpg) no-repeat; background-size: cover; min-height: 400px; z-index: 9; position: absolute;}
+.navbar-brand {font-family: 'Cinzel Decorative', cursive; font-weight: 700; color: #4c5b0d !important; letter-spacing: 0.05em; font-size: 28px}
+.nav-link {color: #4c5b0d}
+.btn-login {padding: 0px 17px; border: 1px solid #4c5b0d; border-radius: 30px; font-size: 14px; margin-left: 5px}
+
+header {height:60vh; min-height:300px; background-size:cover; background-image:url('../img/bg-header.jpg');}
+
+.sugerencias {padding: 0 2px; text-align: center; font-size: 15px}
+.sugerencias div {background-color: #efefef; padding: 10px}
+
+
+
+
+/******************* POPUP LOGIN Y REGISTRO ********************/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {visibility: visible; opacity: 1;}
+
+#popup1 .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+#popup2 .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 6px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {color: #4c5b0d;}
+
+.popup .form-group {margin-bottom: 0.5rem;}
+.popup label, .popup input {font-size: 13px; margin-bottom: 0rem; display: inline-block;}
+.popup button {font-size: 14px; display: block;w}
+.popup a {font-size: 13px; color: #666666; display: block; margin: 10px 0px}
+.popup a:hover {color: rgba(76,91,13,1);}
+
+.form-error-style {    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;}
+
+
+
+/******************* BUSCADOR ********************/
+form.search-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input.search-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #4c5b0d;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form.search-form:hover{ width: 300px; cursor: pointer; }
+
+form.search-form:hover input.search-input{display: block;}
+
+form.search-form:hover .fa{background: #4c5b0d; color: white;}
+
+
+

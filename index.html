@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Libreria</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Librería</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="btn btn-login" href="#popup1">LogIn</a>
+              </li>
+              <li class="nav-item active">
+                <a class="btn btn-login" href="#popup2">Registrarse</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Search form -->
+      <form class="search-form" action="">
+        <input class="search-input" id="busqueda" type="search" minlength="3" required>
+        <a href="#" class="search_icon">
+          <i class="fa fa-search"></i>
+        </a>
+      </form>
+      
+    </header>
+
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12">
+          <h3>Sugerencias</h3>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+        <div class="col-lg-2 sugerencias">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="">
+            <br> <br>
+            <a href="#">ver m&aacute;s</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/row-->
+  </div>
+  <!--container-->
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small mt-5">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> libreria.com</a>
+    </div>
+  </footer>
+
+<!-- popup login -->
+  <div id="popup1" class="overlay">
+    <div class="popup verde">
+      <h4>Iniciar sesi&oacute;n</h4>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <form class="form-login" novalidate>
+          <div class="form-group">
+            <label for="email-user">Email</label>
+            <input type="email" class="form-control" id="email-user" placeholder="Ingresar email" required>
+            <div class="invalid-feedback">
+                Por favor, ingresa tu email.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pass">Contrase&ntilde;a</label>
+            <input type="password" class="form-control" id="pass" placeholder="Ingresar contrase&ntilde;a" required>
+            <div class="invalid-feedback">
+                Por favor, ingresa tu contrase&ntilde;a.
+              </div>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="recordarme">
+            <label class="form-check-label" for="recordarme">Recordar mi usuario</label>
+          </div>
+          <hr>
+          <a href="">¿Olvidaste tu contraseña?</a>
+          
+          <button type="submit" class="btn btn-primary">INGRESAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- cierra popup login -->
+
+
+
+<!-- popup registro -->
+  <div id="popup2" class="overlay">
+    <div class="popup verde">
+      <h4>Registrarme</h4>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <form method="POST" action="registrado.html" onsubmit="return Validate()" name="vform" class="form-registro">
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label>Nombre/s y apellido/s</label> <br>
+              <input type="text" class="form-control" name="username">
+              <div id="username_error"></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Email</label> <br>
+              <input type="email" class="form-control" name="email">
+              <div id="email_error"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label>Contrase&ntilde;a</label>
+              <input type="password" class="form-control" name="password">
+              <div id="password_error"></div>
+            </div>
+           <div class="col-md-6 mb-3">
+               <label>Confirmar contrase&ntilde;a</label>
+               <input type="password" class="form-control" name="password_confirmation">
+               <div id="password_confirmation_error"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label>Provincia</label>
+              <select class="custom-select" name="provincia">
+                <option value="">-- selecciona provincia --</option>
+                <option value="provincia 1">provincia 1</option>
+                <option value="provincia 2">provincia 2</option>
+                <option value="provincia 3">provincia 3</option>
+                <option value="provincia 4">provincia 4</option>
+                <option value="provincia 5">provincia 5</option>
+              </select> 
+              <div id="provincia_error"></div>
+            </div>
+          </div>
+            <button class="btn btn-primary mt-3" type="submit" name="register">Registrarme</button>
+         </form>
+      </div>
+    </div>
+  </div>
+<!-- cierra popup registro -->
+
+
+
+<!-- VALIDACION FORMS LOGIN C/Bootstrap !-->
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.get('form-login');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+  <!-- validacion form registro -->
+  <script src="validateform/script-2.js" type="text/javascript"></script>
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
