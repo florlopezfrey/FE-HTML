@@ -40,7 +40,23 @@ function Validate() {
         email_error.classList.add("form-error-style");
         email.focus();
         acumErrores ++;
+    } else {
+        // \w+   indica que al menos tiene una letra o número (esto es obligatorio)
+        // ([\.-]?\w+)*   como puede tener punto o guion ademas de letras y numeros, lo aclaramos pero no es obligatorio. El asterisco indica que puede aparecer cero o varias veces
+        //@   porque es obligatorio
+        // \w+([\.-]?\w+)*   después del @siempre va algun num o letra y es opcional que haya algun guion o punto
+        // (\.\w+   esto indica que el dominio tiene un punto y XX cantidad de letras. 
+                    //El + indica que puede haber mas de un .algo (por ej, .com.ar). Si quisiera especificar el máx de letras para el dominio, pondría (\.\w{2,3,4})+, siendo el 2,3,4 la cantidad de caracteres permitidos
+
+        // Creo el patron para comprobar el correo
+        var patronEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
+            if(email.value.search(patronEmail)!=0) {
+                email_error.innerHTML = "Por favor ingrese un email correcto.";
+                email_error.classList.add("form-error-style");
+            }
     }
+
+    
     //pass
     if(password.value == "") {
         password.style.border = "1px solid red";
@@ -50,7 +66,7 @@ function Validate() {
         acumErrores ++;
     }
     //pass confirmation
-    if(password_confirmation.value =="" && password_confirmation.value != password.value) {
+    if(password_confirmation.value =="" || password_confirmation.value != password.value) {
         password_confirmation.style.border = "1px solid red";
         password_confirmation_error.textContent = "Las contraseñas no coinciden";
         password_confirmation_error.classList.add("form-error-style");
